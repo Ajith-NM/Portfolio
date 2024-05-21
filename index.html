@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajith NM</title>
+
+    <!------------------------------------------------- font-awesome cdn------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------------------------------------------------- custom css------------------------------------------------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!------------------------------------------------- ajax------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!------------------------------------------------- Particles/bubbles ------------------------------------------------->
+    <div id="bubbles-js"></div>
+    <!------------------------------------------------- cursor ------------------------------------------------->
+    <div id="cursor"></div>
+    <!------------------------------------------------- Header ------------------------------------------------->
+    <header>
+        <nav>
+
+            <ul id="nav_links">
+                <li><a href="#about" onclick="menu_open()">About Me</a></li>
+                <li><a href="#Projects" onclick="menu_open()">Projects</a></li>
+                <li><a href="#Contact" onclick="menu_open()">Contact Me</a></li>
+            </ul>
+
+            <div class="menu-icon" id="menu-icon">
+                <div class="icon" onclick="menu_open()"><i class="fa-solid fa-bars" id="open_menu"></i>
+                    <i class="fa-solid fa-xmark" id="closed_menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------------------------------  About me ------------------------------------------------->
+    <section id="about">
+        <div class="home">
+            <div class="about">
+
+                <p class="mouse-hover">Hello, I'm Ajith N M ...</p>
+                <h1 id="head1">Fullstack web developer</h1>
+
+                <div class="buttons">
+                    <a href="" class="download" download>Download CV</a>
+                    <a href="https://github.com/Ajith-NM" target="_blank" class="contact">View GitHub</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!------------------------------------------------- Skills ------------------------------------------------->
+        <div class="skills">
+            <div class="title_text">
+                <h1>Skills</h1>
+            </div>
+            <div class="skillbox">
+                <div class="skillboxs">
+                    <div class="skill">
+                        <h2>HTML</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/html.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>CSS</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/css.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>JS</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/js.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>TS</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/ts.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>Angular</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/angular.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>MongoDB</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/mongodb.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>Express.js</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/express.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>Node.js</h2>
+                        <div class="pop-image">
+                            <img src="./assets/icons/nodejs.svg" alt="" class="pop-up-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------- MY Projects ------------------------------------------------->
+    <section class="projects" id="Projects">
+        <div class="title-text">
+            <h1>My Projects</h1>
+        </div>
+        <div class="projectbox">
+            <div class="projectboxes">
+
+                <div class="project">
+                    <div class="image"><img src="./assets/projects/blog.png" alt="blog site image"></div>
+                    <div class="data">
+                        <h2>Blog Website</h2>
+                        <a href="https://github.com/Ajith-NM/Blog-Website.git">view project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image"><img src="./assets/projects/socialmeadia.png" alt="social meadia clone"></div>
+                    <div class="data">
+                        <h2>Social Media Website</h2>
+                        <a href="https://github.com/Ajith-NM/Social-Media-website.git">view project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image"><img src="./assets/projects/imageGenerator.png" alt="image generator"></div>
+                    <div class="data">
+                        <h2>AI Image Generator</h2>
+                        <a href="https://github.com/Ajith-NM/AI-Image-Generator.git">view project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------- Contact Me ------------------------------------------------->
+    <section id="Contact" class="Contact">
+        <div class="body">
+            <div class="left">
+                <div class="icons icon-anim" id="icons">
+                    <div class="icon"><a href="https://github.com/Ajith-NM" target="_blank" style="--i:0"><i
+                                class="fa-brands fa-square-github"></i></a></div>
+                    <div class="icon "><a href="mailto:ajith.n.m5603@gmail.com" target="_blank" style="--i:1"><i
+                                class="fa-solid fa-envelope"></i></a></div>
+                    <div class="icon "><a href="https://www.linkedin.com/in/ajith-nm-5736a630a" target="_blank"
+                            style="--i:2"><i class="fa-brands fa-linkedin"></i></a></div>
+
+                </div>
+                <div class="texts" id="texts">
+                    <div class="text text-anim">
+                        <p style="--i:0">Feel</p>
+                    </div>
+                    <div class="text text-anim">
+                        <p style="--i:1">free to</p>
+                    </div>
+                    <div class="text text-anim">
+                        <p style="--i:2">reach me...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="formdata form-anim">
+                    <h1>Contact me</h1>
+                </div>
+                <form action="" id="gform">
+                    <div class="input-box formdata form-anim">
+                        <div class="input email">
+                            <label for="">email address*</label><input type="email" name="Email"
+                                placeholder="abc@gmail.com" required>
+                        </div>
+                        <div class="input name">
+                            <label for="">name*</label><input type="text" name="Name" placeholder="John Joe" required>
+                        </div>
+
+                    </div>
+                    <div class="message formdata form-anim">
+                        <div class="msg-body">
+                            <label for="">message*</label>
+                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Enter your message"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="button formdata form-anim">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copy-right-act mouse-hover">
+                <p> <span>©</span>2024 all rights reserved</p>
+            </div>
+            <div class="back-to-top mouse-hover">
+                <a href="#">back to top</a>
+            </div>
+            <div class="copy-right-owner mouse-hover">
+                <p><a href="https://aswindesign.github.io/Portfolio/" target="_blank">Designed by Aswin TC</a>
+                </p>
+            </div>
+        </footer>
+    </section>
+    <!-------------------------------------------------------------------------------------------------->
+    <!---- link all script tags ---->
+    <script src="./script.js"></script>
+    <script src="./particles/particles.js"></script>
+    <script src="./particles/app.js"></script>
+
+    <script>
+        $("#gform").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbyzq2KYbP6otmliVes8ORnh1GltEXAcEjUY4EV_cmDoQigjt_7a15u8gMbeNFkb-cQjiw/exec",
+                data: $("#gform").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+
+                },
+                error: function (err) {
+                    alert("Something went wrong")
+
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
