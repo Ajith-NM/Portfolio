@@ -167,7 +167,7 @@ nav ul li a:hover {
     letter-spacing: 3px;
     color: hsl(0, 0%, 80%);
     border-right: 2.5px solid var(--specialcolor);
-    animation: typewriter 4s steps(40) normal, blinkCursor 0.8s infinite;
+    animation: typewriter 2.8s steps(40) normal, blinkCursor 0.8s infinite;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50px);
@@ -178,7 +178,8 @@ nav ul li a:hover {
 .about h1 {
     font-weight: 600;
     /* font-size: 6.7vw; */
-    font-size: 7.5vw;
+    /* font-size: 7.5vw; */
+    font-size: 9vw;
     text-transform: capitalize;
     position: relative;
     filter: blur(5px);
@@ -965,7 +966,7 @@ footer {
     }
 
     .about h1 {
-        font-size: 7.6vw;
+        font-size: 8.6vw;
 
     }
 
